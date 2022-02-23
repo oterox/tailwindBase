@@ -1,0 +1,198 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
+<nav class="bg-verdePago">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button
+            type="button"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Heroicon name: outline/menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg
+              class="block h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg
+              class="hidden h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+        >
+          <div class="flex-shrink-0 flex items-center">
+            <svg width="143" height="38" viewBox="0 0 143 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M72.7764 24.1778C69.3869 24.1778 67.0103 21.487 67.0103 18.1335C67.0103 14.7796 69.3869 12.0893 72.7764 12.0893C76.1656 12.0893 78.5422 14.7796 78.5422 18.1335C78.5422 21.487 76.1656 24.1778 72.7764 24.1778ZM72.7764 8.57948C67.3609 8.57948 63.3092 12.6744 63.3092 18.1335C63.3092 23.5932 67.3609 27.6878 72.7764 27.6878C78.1913 27.6878 82.2433 23.5932 82.2433 18.1335C82.2433 12.6744 78.1913 8.57948 72.7764 8.57948ZM55.7118 21.5653C54.4653 23.2422 52.5563 24.1778 50.6863 24.1778C47.1411 24.1778 44.6086 21.4092 44.6086 18.1335C44.6086 14.9357 46.9462 12.0893 50.4918 12.0893C52.7122 12.0893 54.582 13.2202 55.7118 14.7018V21.5653ZM55.8288 10.6459C54.1537 9.20334 52.1667 8.57948 50.102 8.57948C48.3876 8.57948 46.8685 9.00823 45.6217 9.74916C42.8555 11.3874 40.9075 14.4679 40.9075 18.1335C40.9075 21.7989 42.8165 24.8412 45.5827 26.4784C46.8295 27.2196 48.5436 27.6878 50.1797 27.6878C52.3616 27.6878 54.2317 26.9857 55.7118 25.6987V26.713C55.7118 29.0134 55.3612 30.4177 54.699 31.4313C53.8031 32.7963 52.2447 33.5372 50.2577 33.5372C47.2578 33.5372 45.5437 32.0161 44.2192 30.2616L41.492 32.7963C42.6605 34.6289 45.6607 37.0465 50.4136 37.0465C54.0367 37.0465 56.8417 35.3698 58.3221 32.5229C59.0623 31.0803 59.4129 29.2472 59.4129 26.5179V8.96946H55.8288V10.6459ZM33.3104 21.5653C32.0638 23.2422 30.1545 24.1778 28.285 24.1778C24.7394 24.1778 22.2071 21.4092 22.2071 18.1335C22.2071 14.9357 24.5444 12.0893 28.0901 12.0893C30.3107 12.0893 32.1805 13.2202 33.3104 14.7018V21.5653ZM33.4273 10.6459C31.7519 9.20334 29.7654 8.57948 27.7002 8.57948C25.9861 8.57948 24.4667 9.00823 23.2202 9.74916C20.454 11.3874 18.506 14.4679 18.506 18.1335C18.506 21.7989 20.415 24.8412 23.1812 26.4784C24.4277 27.2196 26.1418 27.6878 27.7782 27.6878C29.9599 27.6878 31.9466 26.9469 33.4273 25.6211V27.2979H37.0114V8.96946H33.4273V10.6459ZM13.7135 10.2952C13.0123 11.0362 11.9997 11.5042 10.1297 11.5042H3.89602V3.70465H10.1297C11.9997 3.70465 13.0123 4.17267 13.7135 4.91385C14.3763 5.61576 14.8044 6.5518 14.8044 7.60466C14.8044 8.65728 14.3763 9.59332 13.7135 10.2952ZM16.0122 1.79404C14.6877 0.663133 12.9733 0 10.3243 0H0V27.2979H3.89602V15.2091H10.3243C12.9733 15.2091 14.6877 14.5457 16.0122 13.415C17.6483 12.011 18.7002 9.94427 18.7002 7.60466C18.7002 5.2648 17.6483 3.1981 16.0122 1.79404Z" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M142.999 12.2967V8.97867H137.138V3.90399H133.426V20.6901C133.426 22.6812 133.817 24.3597 134.91 25.5702C136.083 26.8975 137.802 27.7171 140.108 27.7171C141.163 27.7171 142.296 27.5608 142.999 27.3267L142.257 23.9696C141.71 24.1258 140.772 24.2035 140.225 24.2035C139.248 24.2035 138.193 23.8521 137.685 23.2279C137.216 22.6812 137.138 21.8616 137.138 20.8852V12.2967H142.999ZM130.026 8.97867H125.65L121.312 14.9123L116.974 8.97867H112.598L118.889 17.6841L111.934 27.3267H116.349L121.312 20.4557L126.275 27.3267H130.69L123.735 17.6841L130.026 8.97867ZM105.095 29.0443L88.6826 8.97867H85.9476V27.3267H89.8554V16.2397L106.267 36.3056H109.003V0H105.095V29.0443Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a
+                href="#"
+                class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                aria-current="page"
+                >Menu 0</a
+              >
+  
+              <a
+                href="#"
+                class="text-gray-800 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Menu 1</a
+              >
+  
+              <a
+                href="#"
+                class="text-gray-800 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Menu 2</a
+              >
+  
+              <a
+                href="#"
+                class="text-gray-800 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Menu 3</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+        >
+          <button
+            type="button"
+            class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+          >
+            <span class="sr-only">View notifications</span>
+            <!-- Heroicon name: outline/bell -->
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+              />
+            </svg>
+          </button>
+  
+          <!-- Profile dropdown -->
+          <div class="ml-3 relative">
+            <div>
+              <button
+                type="button"
+                class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                id="user-menu-button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                <span class="sr-only">Open user menu</span>
+                <img
+                  class="h-8 w-8 rounded-full"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a
+          href="#"
+          class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+          aria-current="page"
+          >Menu 0</a
+        >
+  
+        <a
+          href="#"
+          class="text-gray-800 hover:bg-gray-700 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
+          >Menu 1</a
+        >
+  
+        <a
+          href="#"
+          class="text-gray-800 hover:bg-gray-700 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
+          >Menu 2</a
+        >
+  
+        <a
+          href="#"
+          class="text-gray-800 hover:bg-gray-700 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
+          >Menu 3</a
+        >
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mx-auto">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mx-3 mt-12">
+      <div class="bg-gray-200 px-6 py-3">Column 01</div>
+      <div class="bg-gray-200 px-6 py-3 font-SantanderHeadlineW05">Column 02</div>
+      <div class="bg-gray-200 px-6 py-3 font-SantanderHeadlineW05Bold">Column 03</div>
+  
+      <div class="bg-gray-200 px-6 py-3">Column 04</div>
+      <div class="bg-gray-200 px-6 py-3 font-Monserrat">Column 05</div>
+      <div class="bg-gray-200 px-6 py-3 font-Monserrat">Column 06</div>
+    </div>
+  </div>
+  
+  <div class="container mx-auto">
+    <div class="grid grid-cols-12 gap-4 mx-3 mt-12">
+      <div class="bg-gray-200 px-6 py-3 col-span-3 lg:col-span-12">Sidebar</div>
+      <div class="bg-gray-200 lg:bg-red lg:text-white px-6 py-3 col-span-9 lg:col-span-12">Content</div>
+    </div>
+  </div>
+  
