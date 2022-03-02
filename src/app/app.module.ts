@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './demos/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Demo0Component } from './demos/demo0/demo0.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +15,9 @@ import { Demo0Component } from './demos/demo0/demo0.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,3 +8,16 @@
         src: url("./assets/fonts/Monserrat.woff2") format("woff2");
     }
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Material customization */
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: white !important;
+    border: 1px solid rgb(156 163 175) !important;
+    border-radius: 5px !important;
+    padding: 0.5em 0.5em 0 0.5em !important;
+}
+.mat-form-field-underline{
+    display: none !important;
+}

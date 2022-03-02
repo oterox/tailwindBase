@@ -54,73 +54,73 @@
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start" >
           <div class="flex-shrink-0 flex items-center">
-            <h1 class="text-2xl">UNIR</h1>
+            <h1 class="text-2xl font-bold">UNIR</h1>
           </div>
         </div>
       </div>
     </div>
-  
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-      <div class="px-2 pt-2 pb-3 space-y-1">
-        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a
-          href="#"
-          class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-          aria-current="page"
-          >Menu 0</a
-        >
-  
-        <a
-          href="#"
-          class="text-gray-800 hover:bg-gray-700 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
-          >Menu 1</a
-        >
-  
-        <a
-          href="#"
-          class="text-gray-800 hover:bg-gray-700 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
-          >Menu 2</a
-        >
-  
-        <a
-          href="#"
-          class="text-gray-800 hover:bg-gray-700 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
-          >Menu 3</a
-        >
-      </div>
-    </div>
+
   </nav>
-  <style>
-    .input {
-        transition: border 0.2s ease-in-out;
-    }
-
-    .input:focus+.label,
-    .input:active+.label,
-    .input.filled+.label {
-        font-size: .75rem;
-        transition: all 0.2s ease-out;
-        top: -0.1rem;
-        color: #9CA3AF;
-    }
-
-    .label {
-        transition: all 0.2s ease-out;
-        top: 0.5rem;
-      	left: 0;
-    }
-</style>
-  <div class="bg-split-gray-white">
+<div class="md:bg-split-gray-white">
   <div class="container mx-auto">
+
     <div class="grid md:grid-cols-12">
       <div class="bg-gray-200 px-6 md:col-span-8 py-10">
+        <div class="flex items-center pb-3">
+          <div class="w-7 h-7 bg-blue-900 text-white rounded-full flex justify-center items-center text-center p-3 mr-4">2</div>
+          <h2 class="text-2xl">Student info</h2>
+        </div>
+        <p class="pb-3 text-xl font-light">Please complete the student information</p>
         <div class="mb-4 relative">
-          <input class="input border border-gray-400 appearance-none rounded w-full px-3 py-3 pt-5 pb-2 ring-0 focus:border-gray-400 focus:outline-none active:outline-none active:border-gray-400" id="student-id" type="text">
-          <label for="student-id" class="label absolute mb-0 pt-4 pl-3 leading-tighter text-gray-400 text-base -mt-2 cursor-text">Student ID</label>
+          <mat-form-field class="w-full lg:w-3/4" appearance="fill">
+            <mat-label class="">Student ID</mat-label>
+            <input matInput class="!text-gray-500">
+          </mat-form-field>
+        </div>
+        <div class="mb-4 relative">
+          <mat-form-field class="w-full lg:w-3/4" appearance="fill">
+            <mat-label class="">Full name</mat-label>
+            <input matInput class="!text-gray-500">
+          </mat-form-field>
+        </div>
+        <div class="mb-4 relative">
+          <mat-form-field class="w-full lg:w-3/4" appearance="fill">
+            <mat-label class="">Student email</mat-label>
+            <input matInput class="!text-gray-500">
+          </mat-form-field>
+        </div>
+        <div class="mb-4 relative">
+          <mat-form-field class="w-full lg:w-3/4" appearance="fill">
+            <mat-label class="">Training</mat-label>
+            <input matInput class="!text-gray-500">
+          </mat-form-field>
+        </div>
+        <div class="mb-4 relative">
+          <mat-form-field class="w-full lg:w-3/4" appearance="fill">
+            <mat-label class="">ID training number</mat-label>
+            <input matInput class="!text-gray-500">
+          </mat-form-field>
         </div>
       </div>
-      <div class="bg-white px-6 md:col-span-4 py-10 min-h-screen font-SantanderHeadlineW05">Sidebar</div>
+
+
+      <div class="bg-white px-6 md:col-span-4 py-10 min-h-screen font-SantanderHeadlineW05">
+        <div class="border-b-2 border-gray-100 mb-5">
+          <h2 class="text-2xl pb-3">Amount</h2>
+          <p class="pb-3 text-lg font-light grid xl:flex xl:justify-between">Country of origin:<span>España</span></p>
+          <p class="pb-3 text-lg font-light grid xl:flex xl:justify-between">Amount:<span>10.000$</span></p>
+        </div>
+        <div class="">
+          <h2 class="text-2xl pb-3">Student info</h2>
+          <p class="pb-3 text-lg font-light grid xl:flex xl:justify-between">Student ID:<span>123456789-ABC</span></p>
+          <p class="pb-3 text-lg font-light grid xl:flex xl:justify-between">Full name:<span>Javier Otero</span></p>
+          <p class="pb-3 text-lg font-light grid xl:flex xl:justify-between">Student email:<span>email@pagonxt.com</span></p>
+          <p class="pb-3 text-lg font-light grid xl:flex xl:justify-between">Training:<span>Grado en derecho y políticas</span></p>
+          <p class="pb-3 text-lg font-light grid xl:flex xl:justify-between">ID training number:<span>lawpolitics12345</span></p>
+        </div>
+      </div>
+
+
     </div>
   </div>
-  </div>
+</div>
